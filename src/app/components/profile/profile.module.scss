@@ -1,0 +1,94 @@
+.profile {
+  border-radius: 12px;
+  position: relative;
+  width: 911px;
+  margin: 16px auto;
+  height: 400px;
+  background-color: var(--background-block, #ffffff);
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif;
+  color: var(--primary-color, black);
+}
+.topImg {
+  background-image: url('https://sun9-55.userapi.com/impg/V6bLkooZjZBh5wpyHuY061KfLLTpFBI7spJWZg/E43hijqtJgI.jpg?size=960x320&quality=96&crop=0,0,960,320&sign=acd25fd849fafd0d48a5ecdae3f50bf5&c_uniq_tag=z_GRWlG0ueAeqv9iMLTaoBVDhmvTUSOUZyKeZIGtDps&type=helpers');
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  height: 252px;
+}
+.profileContent {
+  position: relative;
+  display: flex;
+  margin-top: -25px;
+  background-color: var(--background-block, #ffffff);
+  width: 100%;
+  height: 100%;
+  max-height: 180px;
+  border-radius: 12px;
+  padding: 20px;
+}
+.profileAvatar {
+  background-image: url('https://sun164-1.userapi.com/s/v1/ig1/PxlXfqI1LHPu9mTWjQnZwAlwUn8bKIbps67LN4TX_USxo6tzpHYlL-Ofdy3OQNrhqOJB6Pba.jpg?quality=96&crop=218,303,592,592&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540&ava=1&u=zvBZ6rHwbFHtHK2XB_aqOw2CCywXYJllgiU1iaHDiB0&cs=200x200');
+  width: 150px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #ffffff;
+  height: 150px;
+  margin-top: -100px;
+  margin-left: 20px;
+}
+
+.profileWrap {
+  margin-left: 16px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.profileTitle {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--primary-color, black);
+  }
+.profileDesc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--primary-color, #333);
+}
+.profileTags {
+ display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.tagItem {
+  padding: 4px 8px;
+  border-radius: 8px;
+  min-width: 64px;
+  text-align: center;
+  color: var(--primary-color, #333);
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 4px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  border: 1px solid var(--border-color,#e1e1e1);
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
+}
+.profileLocation {
+  display: flex;
+  gap: 4px;
+}
+.profileLocationIcon {
+  width: 20px;
+  height: 20px;
+}
+.profileLocationText {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--secondary-color, #333);
+}

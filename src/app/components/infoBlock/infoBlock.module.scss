@@ -1,0 +1,74 @@
+.infoSection {
+  width: 911px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.infoBlock {
+  border-radius: 12px;
+  position: relative;
+  width: 50%;
+  margin-top: 25px;
+  height: 290px;
+  background-color: var(--background-block, #ffffff);
+  font-family: PT Sans, sans-serif;
+  color: black;
+  padding: 20px;
+  border: 1px solid var(--border-color,#e1e1e1);
+}
+.infoTitleBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.infoIconTitle {
+  width: 25px;
+  height: 25px;
+}
+.infoTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--primary-color, #000);
+}
+.infoWorkList {
+  margin-top: 20px;
+}
+.workItem {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+  align-items: center;
+}
+.infoIconWork {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.workWrap {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-color, #000);
+}
+.itemText {
+  color: var(--secondary-color, #646363);
+  font-size: 15px;
+}
+.infoStudyList {
+  padding: 8px;
+  margin-top: 12px;
+}
+.studyItem {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+.studyLevel {
+  width: 100%;
+  max-width: 100px;
+  color: var(--secondary-color, #646363);
+  font-size: 16px;
+}

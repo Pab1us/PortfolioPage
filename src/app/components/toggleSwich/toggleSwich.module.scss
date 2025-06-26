@@ -1,0 +1,184 @@
+
+/* Основные стили контейнера */
+.toggleСontainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Стили для label */
+.toggleLabel {
+  font-size: 16px;
+  color: #333;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Базовые стили переключателя */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Стили ползунка */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  width: 55px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: .4s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Состояние включено */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Закругленный вариант */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Disabled состояния */
+.toggleСontainer.disabled {
+  opacity: 0.7;
+}
+
+.toggleСontainer.disabled .toggle-label {
+  cursor: not-allowed;
+}
+
+.switch input:disabled + .slider {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+}
+
+.switch input:disabled:checked + .slider {
+  background-color: #b0d8f5;
+}
+
+/* Варианты размеров */
+.toggleСontainer.small {
+  gap: 8px;
+}
+
+.toggleСontainer.small .switch {
+  width: 40px;
+  height: 24px;
+}
+
+.toggleСontainer.small .slider:before {
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  bottom: 4px;
+}
+
+.toggleСontainer.small input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.toggleСontainer.small .toggle-label {
+  font-size: 14px;
+}
+
+.toggleСontainer.large {
+  gap: 16px;
+}
+
+.toggleСontainer.large .switch {
+  width: 72px;
+  height: 40px;
+}
+
+.toggleСontainer.large .slider:before {
+  width: 32px;
+  height: 32px;
+  left: 4px;
+  bottom: 4px;
+}
+
+.toggleСontainer.large input:checked + .slider:before {
+  transform: translateX(32px);
+}
+
+.toggleСontainer.large .toggle-label {
+  font-size: 18px;
+}
+
+/* Цветовые варианты */
+.toggleСontainer.primary input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.toggleСontainer.success input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+.toggleСontainer.warning input:checked + .slider {
+  background-color: #FF9800;
+}
+
+.toggleСontainer.danger input:checked + .slider {
+  background-color: #F44336;
+}
+
+/* Темная тема */
+.toggleСontainer.dark .toggle-label {
+  color: #f0f0f0;
+}
+
+.toggleСontainer.dark .slider {
+  background-color: #555;
+}
+
+.toggleСontainer.dark input:checked + .slider {
+  background-color: #1565C0;
+}
+
+/* Анимация при переключении */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(33, 150, 243, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(33, 150, 243, 0); }
+}
+
+.toggleСontainer.animate input:checked + .slider {
+  animation: pulse 0.5s ease-out;
+}
