@@ -1,7 +1,6 @@
 "use client";
-import {Fragment, useState} from "react";
+import {useState} from "react";
 import Header from "@/app/components/header/header";
-import Slider from "@/app/components/slider/slider";
 import styles from "./page.module.scss"
 import Profile from "@/app/components/profile/profile";
 import InfoBlock from "@/app/components/infoBlock/infoBlock";
