@@ -67,7 +67,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (max-width: 920px) {
   .aboutMe {
     width: auto;
     margin-left: 10px;

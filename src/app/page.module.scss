@@ -14,3 +14,9 @@
   justify-content: center;
   gap: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .mainContent {
+    gap: 0;
+  }
+}

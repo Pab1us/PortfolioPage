@@ -2,6 +2,8 @@
 import styles from "./portfolio.module.scss"
 import Slider from "@/app/components/slider/slider";
 
+import Image from 'next/image'
+
 export default function Portfolio() {
     const slides = [
         {
@@ -35,7 +37,7 @@ export default function Portfolio() {
         <section>
             <div className={styles.portfolio} >
                 <div className={styles.portfolioTitleBlock}>
-                    <img className={styles.portfolioIconTitle}src={"/icons/portfolio.png"}/>
+                    <Image alt="" className={styles.portfolioIconTitle} src={"/icons/portfolio.png"}  width={500} height={500}/>
                     <p className={styles.portfolioTitle}>Мои Проекты</p>
                 </div>
                 <div className={styles.slideList}>
@@ -46,7 +48,7 @@ export default function Portfolio() {
                             href={slide.link}
                             target="_blank"
                         >
-                            <img className={styles.slideImg} src={slide.image}/>
+                            <Image alt="" className={styles.slideImg} src={slide.image} width={500} height={500}/>
                             <div className={styles.slideContent}>
                                 <div className={styles.slideTitle}>{slide.title}</div>
                                 <div className={styles.slideText}>{slide.text}</div>

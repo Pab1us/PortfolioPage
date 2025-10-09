@@ -26,7 +26,7 @@ export default function Menu({onValueChange}) {
 
 
     return (
-        <menu>
+        <menu className={styles.menuBlock}>
             <div className={styles.menu} ref={menuRef}>
                 {menuItems.map((item, index) => (
                     <div key={index} className= {activeItem === index ? styles.active : styles.item} onClick={()=> {

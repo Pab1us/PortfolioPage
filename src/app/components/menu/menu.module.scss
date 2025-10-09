@@ -134,6 +134,10 @@
   color: #333;
 }
 
+.menuBlock {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .logoContainer {
     width: 100%;
@@ -143,7 +147,9 @@
     -webkit-justify-content: center;
     justify-content: center;
   }
-
+  .menuBlock {
+    display: none;
+  }
   .item {
     padding: 8px 12px;
   }
