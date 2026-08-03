@@ -1,6 +1,5 @@
 "use client";
-import styles from "./portfolio.module.scss"
-import Slider from "@/app/components/slider/slider";
+import styles from "./Portfolio.module.scss"
 
 import Image from 'next/image'
 
@@ -13,10 +12,10 @@ export default function Portfolio() {
             link: 'https://www.eliton44.ru/'
         },
         {
-            image: '/images/404.png',
-            title: 'KingMovie',
-            text: 'Сервис по просмотру фильмов(В РАЗРАБОТКЕ)',
-            link: '/'
+            image: '/images/animewatch.png',
+            title: 'AnimeWatch',
+            text: 'Сервис по просмотру Аниме:)',
+            link: 'https://anime-watch.online/'
         },
         {
             image: '/images/404.png',
@@ -57,7 +56,6 @@ export default function Portfolio() {
                         </a>
                     ))}
                 </div>
-                {/*<Slider slides={slides} autoPlay={true} interval={5000}/>*/}
             </div>
         </section>
     );

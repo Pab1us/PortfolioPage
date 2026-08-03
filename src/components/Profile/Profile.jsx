@@ -1,5 +1,5 @@
 "use client";
-import styles from "./profile.module.scss"
+import styles from "./Profile.module.scss"
 
 export default function Profile() {
     const tagItems = ['React', 'JavaScript', 'HTML', 'CSS', 'Git', "SQL", "TypeScript"];

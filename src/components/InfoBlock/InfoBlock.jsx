@@ -1,13 +1,8 @@
 "use client";
-import styles from "./infoBlock.module.scss"
+import styles from "./InfoBlock.module.scss"
 import {Fragment} from "react";
 
 export default function InfoBlock() {
-    const work_1 = {
-        icon: "/icons/vk.png",
-        title: "Frontend-разработчик",
-        text: "ВК"
-    }
     const workItems = [
         {
             icon: "/icons/vk.png",

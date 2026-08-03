@@ -1,6 +1,6 @@
 "use client";
-import styles from "./header.module.scss"
-import ToggleSwitch from "@/app/components/toggleSwich/toggleSwich";
+import styles from "./Header.module.scss"
+import ToggleSwitch from "@/components/ToggleSwitch/ToggleSwitch";
 import {useEffect, useState} from "react";
 export default function Header() {
 

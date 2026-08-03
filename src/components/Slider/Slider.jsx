@@ -1,7 +1,6 @@
 "use client";
-import {Fragment, useState, useEffect} from "react";
-import styles from "./slider.module.scss"
-import {event} from "next/dist/build/output/log";
+import {useState, useEffect} from "react";
+import styles from "./Slider.module.scss"
 export default function Slider({ slides, autoPlay = true, interval = 3000 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);

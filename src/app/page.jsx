@@ -1,13 +1,13 @@
 "use client";
 import {useState} from "react";
-import Header from "@/app/components/header/header";
+import Header from "@/components/Header/Header";
 import styles from "./page.module.scss"
-import Profile from "@/app/components/profile/profile";
-import InfoBlock from "@/app/components/infoBlock/infoBlock";
-import AboutMe from "@/app/components/aboutMe/aboutMe";
-import Portfolio from "@/app/components/portfolio/portfolio";
-import Menu from "@/app/components/menu/menu";
-import Contacts from "@/app/components/contacts/contacts";
+import Profile from "@/components/Profile/Profile";
+import InfoBlock from "@/components/InfoBlock/InfoBlock";
+import AboutMe from "@/components/AboutMe/AboutMe";
+import Portfolio from "@/components/Portfolio/Portfolio";
+import Menu from "@/components/Menu/Menu";
+import Contacts from "@/components/Contacts/Contacts";
 export default function Main() {
 
     const [value, setValue] = useState(0)
@@ -34,9 +34,6 @@ export default function Main() {
               <div className={styles.contentBlock}>
                   <Profile />
                   {components}
-                  {/*<AboutMe />*/}
-                  {/*<InfoBlock />*/}
-                  {/*<Portfolio />*/}
               </div>
           </div>
       </section>

@@ -1,5 +1,5 @@
 "use client";
-import styles from "./aboutMe.module.scss"
+import styles from "./AboutMe.module.scss"
 
 export default function AboutMe() {
     const AboutMeText = () => {
@@ -7,7 +7,7 @@ export default function AboutMe() {
             <div style={{ margin: '10px', lineHeight: '1.5' }}>
                 <p style={{ marginBottom: '15px' }}>
                     Всем привет! Закончил бакалавриат и магистратуру по направлению информационные системы и технологии.
-                    Участвовал во внутренних хакатонах компании. Сейчас работаю в рекламном агентстве в команде выдачи и отрисовки рекламы:
+                    Участвовал во внутренних хакатонах компании. Сейчас работаю в БЮ рекламных технологий в команде выдачи и отрисовки рекламы:
                 </p>
 
                 <ul style={{ marginLeft: '10px', paddingLeft: '10px' }}>

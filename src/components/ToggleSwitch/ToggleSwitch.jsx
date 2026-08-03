@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from "./toggleSwich.module.scss"
+import styles from "./ToggleSwitch.module.scss"
 function ToggleSwitch({
                           initialValue = false,
                           onToggle = () => {},

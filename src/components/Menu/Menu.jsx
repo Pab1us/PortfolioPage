@@ -1,6 +1,6 @@
 "use client";
 import {Fragment, useState, useRef} from "react";
-import styles from "./menu.module.scss"
+import styles from "./Menu.module.scss"
 export default function Menu({onValueChange}) {
     let [activeItem, setActiveItem] = useState(0);
     const menuRef = useRef(null);
