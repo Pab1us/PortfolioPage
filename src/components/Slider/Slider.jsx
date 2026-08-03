@@ -5,6 +5,13 @@ export default function Slider({ slides, autoPlay = true, interval = 3000 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
 
+    const goToNext = () => {
+
+        if (isTransitioning || currentIndex === slides.length - 1) return;
+        setIsTransitioning(true);
+        setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+    };
+
     // Автопрокрутка
     useEffect(() => {
         if (!autoPlay) return;
@@ -15,13 +22,6 @@ export default function Slider({ slides, autoPlay = true, interval = 3000 }) {
 
         return () => clearInterval(timer);
     }, [currentIndex, autoPlay, interval]);
-
-    const goToNext = () => {
-
-        if (isTransitioning || currentIndex === slides.length - 1) return;
-        setIsTransitioning(true);
-        setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
-    };
 
     const goToPrev = () => {
         if (isTransitioning) return;
